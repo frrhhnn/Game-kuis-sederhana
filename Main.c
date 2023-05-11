@@ -119,12 +119,8 @@ void soal(){
 
     //soal 1    
     printf("\n\nHadiah untuk pertanyaan pertama = Rp200.000\n");
-    for(int i=60000; i>=0; i--){
-        if(i/10000==0){
-            continue;
-        }
-        printf("\rPertanyaan pertama akan dimulai dalam : %d", i/10000);
-    }
+    printf("\n\t\t\t\tTekan \"ENTER\" untuk menuju ke soal pertama!");
+    getchar();
     system("cls");
     printf("\t\t\tUang yang anda telah kumpulkan = Rp%d", hadiah);
     printf("\n\n\t\t\tApakah kepanjangan dari library \"stdio\" pada bahasa C?\n\n");
@@ -146,12 +142,8 @@ void soal(){
     
     //soal 2    
     printf("\n\nHadiah untuk pertanyaan kedua = Rp400.000\n");
-    for(int i=60000; i>=0; i--){
-        if(i/10000==0){
-            continue;
-        }
-        printf("\rPertanyaan kedua akan dimulai dalam : %d", i/10000);
-    }
+    printf("\n\t\t\t\tTekan \"ENTER\" untuk menuju soal berikutnya!");
+    getchar();
     system("cls");
     printf("\t\t\tUang yang anda telah kumpulkan = Rp%d", hadiah);
     printf("\n\n\t\t\tApakah guna dari fungsi \"printf\" pada bahasa C?\n\n");
@@ -173,12 +165,8 @@ void soal(){
     
     //soal 3    
     printf("\n\nHadiah untuk pertanyaan ketiga = Rp800.000\n");
-    for(int i=60000; i>=0; i--){
-        if(i/10000==0){
-            continue;
-        }
-        printf("\rPertanyaan ketiga akan dimulai dalam : %d", i/10000);
-    }
+    printf("\n\t\t\t\tTekan \"ENTER\" untuk menuju soal berikutnya!");
+    getchar();
     system("cls");
     printf("\t\t\tUang yang anda telah kumpulkan = Rp%d", hadiah);
     printf("\n\n\t\t\tApakah guna dari fungsi \"scanf\" dalam bahasa C?\n\n");
@@ -200,12 +188,8 @@ void soal(){
     
     //soal 4    
     printf("\n\nHadiah untuk pertanyaan keempat = Rp1.600.000\n");
-    for(int i=60000; i>=0; i--){
-        if(i/10000==0){
-            continue;
-        }
-        printf("\rPertanyaan pertama akan dimulai dalam : %d", i/10000);
-    }
+    printf("\n\t\t\t\tTekan \"ENTER\" untuk menuju soal berikutnya!");
+    getchar();
     system("cls");
     printf("\t\t\tUang yang anda telah kumpulkan = Rp%d", hadiah);
     printf("\n\n\t\t\tDi bawah ini merupakan fungsi untuk melakukan looping, kecuali?\n\n");
@@ -227,12 +211,8 @@ void soal(){
     
     //soal 5    
     printf("\n\nHadiah untuk pertanyaan kelima = Rp3.000.000\n");
-    for(int i=60000; i>=0; i--){
-        if(i/10000==0){
-            continue;
-        }
-        printf("\rPertanyaan pertama akan dimulai dalam : %d", i/10000);
-    }
+    printf("\n\t\t\t\tTekan \"ENTER\" untuk menuju soal berikutnya!");
+    getchar();
     system("cls");
     printf("\t\t\tUang yang anda telah kumpulkan = Rp%d", hadiah);
     printf("\n\n\t\t\t\"i++\" merupakan contoh dari perintah?\n\n");
