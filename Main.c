@@ -1,7 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+#include<time.h>
 
+void soal();
 typedef struct registration
 {
     char name[20];
@@ -94,12 +96,159 @@ int main(int manyArgument, char *argument[])
         strcpy(username, string[0]);
         strcpy(password, string[1]);
 
-        if( (strcmp(usernameInput, username) == 0 ) && (strcmp(passwordInput, password) == 0)) {
-            printf("Selamat anda berhasil login !\n");
+        if( (strcmp(usernameInput, username) != 0 ) && (strcmp(passwordInput, password) != 0)) {
+            printf("Anda Gagal login !\n");
+            exit(1);
         } 
         else{
-            printf("Anda Gagal login !\n");
-    }
+            printf("Login berhasil!");
+            printf("\n\n\t\t\t\tSelamat datang di \"UANG KAGET\"");
+            printf("\n\n\t\t\t\tJadilah jutawan dengan hanya menjawab beberapa pertanyaan!!!");
+            printf("\n\t\t\t\tTekan \"ENTER\" untuk memulai permainan!\n\n");
+            getchar();
+            soal();
+        }
+
     }
     return 0;
+}
+
+void soal(){
+    int hadiah=0; 
+    char soal;
+
+    //soal 1    
+    printf("\n\nHadiah untuk pertanyaan pertama = Rp200.000\n");
+    for(int i=60000; i>=0; i--){
+        if(i/10000==0){
+            continue;
+        }
+        printf("\rPertanyaan pertama akan dimulai dalam : %d", i/10000);
+    }
+    system("cls");
+    printf("\t\t\tUang yang anda telah kumpulkan = Rp%d", hadiah);
+    printf("\n\n\t\t\tApakah kepanjangan dari library \"stdio\" pada bahasa C?\n\n");
+    printf("\t\t\t\tA. Standar Input Output\n");
+    printf("\t\t\t\tB. Standar Initial Output\n");
+    printf("\t\t\t\tC. Standar Input Online\n\n");
+    printf("\t\t\tJawaban anda (Jawablah menggunakan huruf kapital sesuai pilihan yang tersedia (A/B/C)) = ");
+    scanf("%c", &soal);
+    getchar();
+
+    if(soal=='A'){
+        printf("\n\nSelamat jawaban anda benar!");
+        hadiah+=200000;
+    }
+    else{
+        printf("\n\nMohon maaf jawaban anda salah\nAnda berhak membawa pulang uang sebesar Rp%d!\n\nTerima kasih telah memainkan game ini!!!", hadiah);
+        exit(1);
+    }
+    
+    //soal 2    
+    printf("\n\nHadiah untuk pertanyaan kedua = Rp400.000\n");
+    for(int i=60000; i>=0; i--){
+        if(i/10000==0){
+            continue;
+        }
+        printf("\rPertanyaan kedua akan dimulai dalam : %d", i/10000);
+    }
+    system("cls");
+    printf("\t\t\tUang yang anda telah kumpulkan = Rp%d", hadiah);
+    printf("\n\n\t\t\tApakah guna dari fungsi \"printf\" pada bahasa C?\n\n");
+    printf("\t\t\t\tA. Mencetak input\n");
+    printf("\t\t\t\tB. Mencetak output ke layar komputer\n");
+    printf("\t\t\t\tC. Membuat perulangan\n\n");
+    printf("\t\t\tJawaban anda (Jawablah menggunakan huruf kapital sesuai pilihan yang tersedia (A/B/C)) = ");
+    scanf("%c", &soal);
+    getchar();
+
+    if(soal=='B'){
+        printf("\n\nSelamat jawaban anda benar!");
+        hadiah+=400000;
+    }
+    else{
+        printf("\n\nMohon maaf jawaban anda salah\nAnda berhak membawa pulang uang sebesar Rp%d!\n\nTerima kasih telah memainkan game ini!!!", hadiah);
+        exit(1);
+    }
+    
+    //soal 3    
+    printf("\n\nHadiah untuk pertanyaan ketiga = Rp800.000\n");
+    for(int i=60000; i>=0; i--){
+        if(i/10000==0){
+            continue;
+        }
+        printf("\rPertanyaan ketiga akan dimulai dalam : %d", i/10000);
+    }
+    system("cls");
+    printf("\t\t\tUang yang anda telah kumpulkan = Rp%d", hadiah);
+    printf("\n\n\t\t\tApakah guna dari fungsi \"scanf\" dalam bahasa C?\n\n");
+    printf("\t\t\t\tA. Melakukan percabangan\n");
+    printf("\t\t\t\tB. Mencetak output ke layar\n");
+    printf("\t\t\t\tC. Mengambil inputan user\n\n");
+    printf("\t\t\tJawaban anda (Jawablah menggunakan huruf kapital sesuai pilihan yang tersedia (A/B/C)) = ");
+    scanf("%c", &soal);
+    getchar();
+
+    if(soal=='C'){
+        printf("\n\nSelamat jawaban anda benar!");
+        hadiah+=800000;
+    }
+    else{
+        printf("\n\nMohon maaf jawaban anda salah\nAnda berhak membawa pulang uang sebesar Rp%d!\n\nTerima kasih telah memainkan game ini!!!", hadiah);
+        exit(1);
+    }
+    
+    //soal 4    
+    printf("\n\nHadiah untuk pertanyaan keempat = Rp1.600.000\n");
+    for(int i=60000; i>=0; i--){
+        if(i/10000==0){
+            continue;
+        }
+        printf("\rPertanyaan pertama akan dimulai dalam : %d", i/10000);
+    }
+    system("cls");
+    printf("\t\t\tUang yang anda telah kumpulkan = Rp%d", hadiah);
+    printf("\n\n\t\t\tDi bawah ini merupakan fungsi untuk melakukan looping, kecuali?\n\n");
+    printf("\t\t\t\tA. While\n");
+    printf("\t\t\t\tB. Switch\n");
+    printf("\t\t\t\tC. For\n\n");
+    printf("\t\t\tJawaban anda (Jawablah menggunakan huruf kapital sesuai pilihan yang tersedia (A/B/C)) = ");
+    scanf("%c", &soal);
+    getchar();
+
+    if(soal=='B'){
+        printf("\n\nSelamat jawaban anda benar!");
+        hadiah+=1600000;
+    }
+    else{
+        printf("\n\nMohon maaf jawaban anda salah\nAnda berhak membawa pulang uang sebesar Rp%d!\n\nTerima kasih telah memainkan game ini!!!", hadiah);
+        exit(1);
+    }
+    
+    //soal 5    
+    printf("\n\nHadiah untuk pertanyaan kelima = Rp3.000.000\n");
+    for(int i=60000; i>=0; i--){
+        if(i/10000==0){
+            continue;
+        }
+        printf("\rPertanyaan pertama akan dimulai dalam : %d", i/10000);
+    }
+    system("cls");
+    printf("\t\t\tUang yang anda telah kumpulkan = Rp%d", hadiah);
+    printf("\n\n\t\t\t\"i++\" merupakan contoh dari perintah?\n\n");
+    printf("\t\t\t\tA. Increment\n");
+    printf("\t\t\t\tB. Decrement\n");
+    printf("\t\t\t\tC. Nested loop\n\n");
+    printf("\t\t\tJawaban anda (Jawablah menggunakan huruf kapital sesuai pilihan yang tersedia (A/B/C)) = ");
+    scanf("%c", &soal);
+    getchar();
+
+    if(soal=='A'){
+        hadiah+=3000000;
+        printf("\n\nSelamat jawaban anda benar dan anda telah memenangkan game ini!\nAnda berhak membawa pulang uang tunai sebesar Rp%d!\n\nTerima kasih telah memainkan game ini!!!", hadiah);
+    }
+    else{
+        printf("\n\nMohon maaf jawaban anda salah\nAnda berhak membawa pulang uang sebesar Rp%d!\n\nTerima kasih telah memainkan game ini!!!", hadiah);
+        exit(1);
+    }
 }
