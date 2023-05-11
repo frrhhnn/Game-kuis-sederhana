@@ -115,7 +115,7 @@ int main(int manyArgument, char *argument[])
 
 void soal(){
     int hadiah=0; 
-    char soal;
+    char jawaban;
 
     //soal 1    
     printf("\n\nHadiah untuk pertanyaan pertama = Rp200.000\n");
@@ -132,10 +132,10 @@ void soal(){
     printf("\t\t\t\tB. Standar Initial Output\n");
     printf("\t\t\t\tC. Standar Input Online\n\n");
     printf("\t\t\tJawaban anda (Jawablah menggunakan huruf kapital sesuai pilihan yang tersedia (A/B/C)) = ");
-    scanf("%c", &soal);
+    scanf("%c", &jawaban);
     getchar();
 
-    if(soal=='A'){
+    if(jawaban=='A'){
         printf("\n\nSelamat jawaban anda benar!");
         hadiah+=200000;
     }
@@ -159,10 +159,10 @@ void soal(){
     printf("\t\t\t\tB. Mencetak output ke layar komputer\n");
     printf("\t\t\t\tC. Membuat perulangan\n\n");
     printf("\t\t\tJawaban anda (Jawablah menggunakan huruf kapital sesuai pilihan yang tersedia (A/B/C)) = ");
-    scanf("%c", &soal);
+    scanf("%c", &jawaban);
     getchar();
 
-    if(soal=='B'){
+    if(jawaban=='B'){
         printf("\n\nSelamat jawaban anda benar!");
         hadiah+=400000;
     }
@@ -186,10 +186,10 @@ void soal(){
     printf("\t\t\t\tB. Mencetak output ke layar\n");
     printf("\t\t\t\tC. Mengambil inputan user\n\n");
     printf("\t\t\tJawaban anda (Jawablah menggunakan huruf kapital sesuai pilihan yang tersedia (A/B/C)) = ");
-    scanf("%c", &soal);
+    scanf("%c", &jawaban);
     getchar();
 
-    if(soal=='C'){
+    if(jawaban=='C'){
         printf("\n\nSelamat jawaban anda benar!");
         hadiah+=800000;
     }
@@ -213,10 +213,10 @@ void soal(){
     printf("\t\t\t\tB. Switch\n");
     printf("\t\t\t\tC. For\n\n");
     printf("\t\t\tJawaban anda (Jawablah menggunakan huruf kapital sesuai pilihan yang tersedia (A/B/C)) = ");
-    scanf("%c", &soal);
+    scanf("%c", &jawaban);
     getchar();
 
-    if(soal=='B'){
+    if(jawaban=='B'){
         printf("\n\nSelamat jawaban anda benar!");
         hadiah+=1600000;
     }
@@ -240,10 +240,10 @@ void soal(){
     printf("\t\t\t\tB. Decrement\n");
     printf("\t\t\t\tC. Nested loop\n\n");
     printf("\t\t\tJawaban anda (Jawablah menggunakan huruf kapital sesuai pilihan yang tersedia (A/B/C)) = ");
-    scanf("%c", &soal);
+    scanf("%c", &jawaban);
     getchar();
 
-    if(soal=='A'){
+    if(jawaban=='A'){
         hadiah+=3000000;
         printf("\n\nSelamat jawaban anda benar dan anda telah memenangkan game ini!\nAnda berhak membawa pulang uang tunai sebesar Rp%d!\n\nTerima kasih telah memainkan game ini!!!", hadiah);
     }
