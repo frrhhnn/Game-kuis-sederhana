@@ -95,7 +95,7 @@ int main(int manyArgument, char *argument[])
         strcpy(username, string[0]);
         strcpy(password, string[1]);
 
-        if( (strcmp(usernameInput, username) != 0 ) && (strcmp(passwordInput, password) != 0)) {
+        if( (strcmp(usernameInput, username) != 0 ) || (strcmp(passwordInput, password) != 0)) {
             printf("Anda Gagal login !\n");
             exit(1);
         } 
