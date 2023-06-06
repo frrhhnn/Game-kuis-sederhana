@@ -67,7 +67,7 @@ int main(int manyArgument, char *argument[])
             fgets(reg.username, sizeof(reg.username), fpr);
             printf("Your account : %s\n", reg.username);
         }
-        printf("Note cara login : ./FileProgramUtama Username Password (harap perhatikan huruf besar dan kecil ya <3!)\n\n");
+        printf("Note cara login : ./FileProgramUtama Username Pasword (harap perhatikan huruf besar dan kecil ya <3!)\n\n");
     }
 
     if(manyArgument == 3){
