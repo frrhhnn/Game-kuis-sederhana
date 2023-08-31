@@ -22,7 +22,7 @@ int main(int manyArgument, char *argument[])
         printf("*************************************************************\n");
         printf("*****\t\tWellcome to our game quizz\t\t*****\n");
         printf("*************************************************************\n");
-        printf("Silahkan registrasi terlebih dahulu sebelum memulai game quiz <3\n");
+        printf("Silahkan registrasi terlebih dahulu sebelum memulai game quizzz <3\n");
         printf("Nama\t\t: "); gets(reg.name);
         printf("Pekerjaan\t: "); gets(reg.job);
         printf("Hobby\t\t: "); gets(reg.hobby);
