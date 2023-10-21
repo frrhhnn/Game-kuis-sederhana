@@ -230,4 +230,5 @@ void soal(){
         printf("\n\nMohon maaf jawaban anda salah\nAnda berhak membawa pulang uang sebesar Rp%d!\n\nTerima kasih telah memainkan game ini!!!", hadiah);
         exit(1);
     }
+    // tesss
 }
